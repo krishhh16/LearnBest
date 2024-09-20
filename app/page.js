@@ -20,19 +20,19 @@ export default async function Home({ params }) {
 			/>
 			<Feature
 				locale={dict.Feature}
-				langName={langName}
+				langName={defaultLocale}
 			/>
 			<Pricing
 				locale={dict.Pricing}
-				langName={langName}
+				langName={defaultLocale}
 			/>
 			<Testimonial
 				locale={dict.Testimonial}
-				langName={langName}
+				langName={defaultLocale}
 			/>
 			<Faq
 				locale={dict.Faq}
-				langName={langName}
+				langName={defaultLocale}
 			/>
 			<Cta
 				locale={dict.CTA}

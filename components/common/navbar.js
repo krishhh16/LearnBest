@@ -65,40 +65,6 @@ export default function Navbar() {
 					);
 				})}
 			</ul>
-
-			<div className='md:w-1/5 flex items-center justify-end gap-2'>
-				<label className='flex items-center justify-center md:bg-base-100 md:rounded-full w-5 md:w-8 h-5 md:h-8 md:shadow-sm md:hover:shadow-md transition-all'>
-					<a
-						aria-label='get template source code'
-						title='get template source code'
-						href='https://github.com/huglemon/inwind-landing-page'
-					>
-						<SiGithub size={14} />
-					</a>
-				</label>
-				<ThemeToggle />
-				<LangSwitch />
-				<details className='flex md:hidden dropdown dropdown-end'>
-					<summary className='btn btn-ghost p-0'>
-						<MdMenu size={18} />
-					</summary>
-					<ul className='menu dropdown-content z-[100] p-2 shadow bg-base-100 opacity-100 rounded-box w-52'>
-						{linkList.map((link, index) => {
-							return (
-								<li key={index}>
-									<a
-										aria-label={link.name}
-										title={link.name}
-										href={`/${langName}${link.url}`}
-									>
-										{link.name}
-									</a>
-								</li>
-							);
-						})}
-					</ul>
-				</details>
-			</div>
 		</header>
 	);
 }
